@@ -1,5 +1,5 @@
 {
-  "name": "hw5",
+  "name": "Michaelis_Assignment_5",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +14,15 @@
     "react-scripts": "2.1.8",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.1",
+    "mongoose": "^5.0.9",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-jwt": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +35,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "proxy": "https://michaelis-assignment-5.herokuapp.com"
 }
