@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f35cd662-f52b-4583-bd99-7e510a0cf6d8" name="Default" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movies.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reviews.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_jwt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            <state relative-caret-position="228">
+              <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -45,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -62,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/constants/actionTypes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="133">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -122,7 +118,6 @@
         <option value="$PROJECT_DIR$/src/components/header.js" />
         <option value="$PROJECT_DIR$/src/components/authentication.js" />
         <option value="$PROJECT_DIR$/src/reducers/authReducer.js" />
-        <option value="$PROJECT_DIR$/src/constants/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/reducers/movieReducer.js" />
         <option value="$PROJECT_DIR$/src/components/movielist.js" />
         <option value="$PROJECT_DIR$/src/.env" />
@@ -138,10 +133,11 @@
         <option value="$PROJECT_DIR$/src/components/movie.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/.env.development" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/src/constants/actionTypes.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -256,7 +252,7 @@
       <workItem from="1554867124264" duration="747000" />
       <workItem from="1556572245512" duration="19000" />
       <workItem from="1556572411762" duration="2961000" />
-      <workItem from="1556575460777" duration="2272000" />
+      <workItem from="1556575460777" duration="2515000" />
     </task>
     <task id="LOCAL-00001" summary="lab1">
       <created>1522979821528</created>
@@ -314,11 +310,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556576503933</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test">
+      <created>1556577738035</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556577738035</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test">
+      <created>1556577785404</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556577785404</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67188000" />
+    <option name="totallyTimeSpent" value="67431000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,11 +343,11 @@
     <frame x="915" y="-8" width="906" height="1791" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75029796" visible="true" weight="0.40635642" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75" visible="true" weight="0.40635642" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info x="186" y="723" width="219" height="209" id="npm" order="2" sideWeight="0.24970202" side_tool="true" visible="true" weight="0.40635642" />
+      <window_info x="186" y="723" width="219" height="209" id="npm" order="2" sideWeight="0.25" side_tool="true" visible="true" weight="0.40635642" />
       <window_info id="Favorites" order="3" sideWeight="0.36885247" side_tool="true" weight="0.24954791" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.329559" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329559" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978903" weight="0.11144219" />
@@ -346,8 +356,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3278272" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3278272" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4040661" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32777116" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.40405244" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50331527" side_tool="true" weight="0.33443344" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -517,17 +527,10 @@
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -547,8 +550,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/constants/actionTypes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
         </state>
       </provider>
     </entry>
