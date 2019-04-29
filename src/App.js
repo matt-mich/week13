@@ -8,6 +8,7 @@ import {HashRouter,Route} from 'react-router-dom';
 import { Provider } from 'react-redux'
 import store from './stores/store'
 
+
 //add routing configuration
 class App extends Component {
     render() {
