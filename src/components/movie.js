@@ -72,7 +72,7 @@ class Movie extends Component {
             if (!currentMovie) { // evaluates to true if currentMovie is null
                 return <div>Loading...</div>;
             }
-            this.state.details.title = currentMovie.title;
+            this.state.title = currentMovie.title;
             return (
                 <Panel>
                     <Panel.Heading>Movie Detail</Panel.Heading>
