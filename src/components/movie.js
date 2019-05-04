@@ -25,7 +25,7 @@ class Movie extends Component {
         this.getReview = this.getReview.bind(this);
 
         this.state = {
-            title: '',
+            title: state.movie.selectedMovie.title,
             rating: '',
             review: ''
         };
@@ -73,7 +73,6 @@ class Movie extends Component {
                 return <div>Loading...</div>;
             }
 
-            this.setState({title: currentMovie.title});
             return (
                 <Panel>
                     <Panel.Heading>Movie Detail</Panel.Heading>
