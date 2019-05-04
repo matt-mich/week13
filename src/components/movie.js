@@ -1,6 +1,16 @@
 import React, { Component }  from 'react';
 import {connect} from "react-redux";
-import { Glyphicon, Panel, ListGroup, ListGroupItem } from 'react-bootstrap'
+import {
+    Glyphicon,
+    Panel,
+    ListGroup,
+    ListGroupItem,
+    Form,
+    FormGroup,
+    Col,
+    ControlLabel,
+    FormControl, Button
+} from 'react-bootstrap'
 import { Image } from 'react-bootstrap'
 import { withRouter } from "react-router-dom";
 import {fetchMovie} from "../actions/movieActions";
@@ -14,7 +24,14 @@ class Movie extends Component {
         if (this.props.selectedMovie == null)
             dispatch(fetchMovie(this.props.movieId));
     }
+    updateDetails(event){
+        let updateDetails = Object.assign({}, this.state.details);
 
+        updateDetails[event.target.id] = event.target.value;
+        this.setState({
+            details: updateDetails
+        });
+    }
     render() {
         const ActorInfo = ({actors}) => {
             return actors.map((actor, i) =>
@@ -47,6 +64,34 @@ class Movie extends Component {
                         <ListGroupItem><h4><Glyphicon glyph={'star'} /> {currentMovie.avgRating} </h4></ListGroupItem>
                     </ListGroup>
                     <Panel.Body><ReviewInfo reviews={currentMovie.reviews} /></Panel.Body>
+                    <Panel.Body>
+                        <Form horizontal>
+                            <FormGroup controlId="username">
+                                <Col componentClass={ControlLabel} sm={2}>
+                                    Rating
+                                </Col>
+                                <Col sm={10}>
+                                    <FormControl onChange={this.updateDetails} value={this.state.details.rating} type="number" placeholder="" />
+                                </Col>
+                            </FormGroup>
+
+                            <FormGroup controlId="password">
+                                <Col componentClass={ControlLabel} sm={2}>
+                                    Review
+                                </Col>
+                                <Col sm={10}>
+                                    <FormControl onChange={this.updateDetails} value={this.state.details.password} type="text" placeholder="" />
+                                </Col>
+                            </FormGroup>
+
+                            <FormGroup>
+                                <Col smOffset={2} sm={10}>
+                                    <Button onClick={this.login}>Submit Review</Button>
+                                </Col>
+                            </FormGroup>
+                        </Form>
+                    </Panel.Body>
+
                 </Panel>
             );
         };
