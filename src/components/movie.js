@@ -38,10 +38,6 @@ class Movie extends Component {
 
     componentDidMount() {
         const {dispatch} = this.props;
-        this.searchInput.focus();
-        const val = this.searchInput.value;
-        this.searchInput.value = '';
-        this.searchInput.value = val;
 
         if (this.props.selectedMovie == null)
             dispatch(fetchMovie(this.props.movieId));
