@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f35cd662-f52b-4583-bd99-7e510a0cf6d8" name="Default" comment="Finishing review system">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/movieActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/movieActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/movie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="93" column="41" lean-forward="true" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+            <state relative-caret-position="532">
+              <caret line="82" column="112" selection-start-line="82" selection-start-column="112" selection-end-line="82" selection-end-column="112" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -189,8 +189,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/movielist.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/components/movie.js" />
         <option value="$PROJECT_DIR$/src/actions/movieActions.js" />
+        <option value="$PROJECT_DIR$/src/components/movie.js" />
       </list>
     </option>
   </component>
@@ -343,7 +343,7 @@
       <workItem from="1556575460777" duration="4222000" />
       <workItem from="1556579704030" duration="5377000" />
       <workItem from="1556729501368" duration="599000" />
-      <workItem from="1556984066309" duration="17695000" />
+      <workItem from="1556984066309" duration="18040000" />
     </task>
     <task id="LOCAL-00001" summary="lab1">
       <created>1522979821528</created>
@@ -583,11 +583,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557011668233</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Finishing review system">
+      <created>1557012023756</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1557012023756</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Finishing review system">
+      <created>1557012111014</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1557012111014</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92809000" />
+    <option name="totallyTimeSpent" value="93154000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -830,8 +844,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/movie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="93" column="41" lean-forward="true" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+        <state relative-caret-position="532">
+          <caret line="82" column="112" selection-start-line="82" selection-start-column="112" selection-end-line="82" selection-end-column="112" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>

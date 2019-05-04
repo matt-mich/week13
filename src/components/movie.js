@@ -75,11 +75,12 @@ class Movie extends Component {
             if (!currentMovie) { // evaluates to true if currentMovie is null
                 return <div>Loading...</div>;
             }
-            this.state.title = currentMovie.title;
+
+            this.setState({title: currentMovie.title});
             return (
                 <Panel>
                     <Panel.Heading>Movie Detail</Panel.Heading>
-                    <Panel.Body><Image className="image" src={currentMovie.imageUrl} thumbnail /></Panel.Body>
+                    <Panel.Body><Image className="image" resizeMode="cover" defaultSource={currentMovie.imageUrl} src={currentMovie.imageUrl} thumbnail /></Panel.Body>
                     <ListGroup>
                         <ListGroupItem>{currentMovie.title}</ListGroupItem>
                         <ListGroupItem><ActorInfo actors={currentMovie.actors} /></ListGroupItem>
