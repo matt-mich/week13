@@ -38,6 +38,11 @@ class Movie extends Component {
 
     componentDidMount() {
         const {dispatch} = this.props;
+        this.searchInput.focus();
+        const val = this.searchInput.value;
+        this.searchInput.value = '';
+        this.searchInput.value = val;
+
         if (this.props.selectedMovie == null)
             dispatch(fetchMovie(this.props.movieId));
     }
@@ -92,7 +97,7 @@ class Movie extends Component {
                                     Rating
                                 </Col>
                                 <Col sm={10}>
-                                    <FormControl onFocusOut={this.getRating} value={this.state.rating} type="number" placeholder="" />
+                                    <FormControl onChange={this.getRating} value={this.state.rating} type="number" placeholder="" />
                                 </Col>
                             </FormGroup>
 
