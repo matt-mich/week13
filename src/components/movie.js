@@ -90,7 +90,7 @@ class Movie extends Component {
                                     Rating
                                 </Col>
                                 <Col sm={10}>
-                                    <FormControl onChange={this.getReview} value={this.state.rating} type="number" placeholder="" />
+                                    <FormControl onChange={this.getRating} value={this.state.rating} type="number" placeholder="" />
                                 </Col>
                             </FormGroup>
 
@@ -99,7 +99,7 @@ class Movie extends Component {
                                     Review
                                 </Col>
                                 <Col sm={10}>
-                                    <FormControl onChange={this.getRating} value={this.state.review} type="text" placeholder="" />
+                                    <FormControl onChange={this.getReview} value={this.state.review} type="text" placeholder="" />
                                 </Col>
                             </FormGroup>
 
