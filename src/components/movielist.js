@@ -28,18 +28,18 @@ class MovieList extends Component {
     handleClick = (movie) => {
         const {dispatch} = this.props;
         dispatch(setMovie(movie));
-    }
+    };
 
     render() {
 
         const MovieListCarousel= ({movieList}) => {
-            if (!movieList) { // evaluates to true if currentMovie is null
-                return <div>Loading...</div>;
+            if (movieList) { // evaluates to true if currentMovie is null
+//                return <div>Loading...</div>;
+                return movieList;
             }
-            console.log(movieList);
             return (
                 <Carousel onSelect={this.handleSelect}>
-                    {Object.forEach(movieList).map((movie) =>
+                    {movieList.map((movie) =>
                     <Carousel.Item key={movie._id}>
                         <div>
                             <LinkContainer to={'/movie/'+movie._id} onClick={()=>this.handleClick(movie)}>
@@ -52,7 +52,7 @@ class MovieList extends Component {
                         </Carousel.Caption>
                     </Carousel.Item>)}
             </Carousel>);
-        }
+        };
 
         return (
             <MovieListCarousel movieList={this.props.movies} />
@@ -64,6 +64,6 @@ const mapStateToProps = state => {
     return {
         movies: state.movie.movies
     }
-}
+};
 
 export default connect(mapStateToProps)(MovieList);
