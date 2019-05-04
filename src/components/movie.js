@@ -14,7 +14,7 @@ import {
 import { Image } from 'react-bootstrap'
 import { withRouter } from "react-router-dom";
 import {fetchMovie} from "../actions/movieActions";
-import {submitLogin} from "../actions/authActions";
+import {addReview} from "../actions/movieActions";
 
 //support routing by creating a new component
 
