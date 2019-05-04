@@ -49,9 +49,6 @@ class Movie extends Component {
     getReview(event){
         this.setState({review: event.target.value});
     }
-    shouldComponentUpdate(nextProps, nextState) {
-        return false;
-    }
 
     render() {
         const ActorInfo = ({actors}) => {
