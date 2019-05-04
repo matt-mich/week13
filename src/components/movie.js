@@ -14,16 +14,36 @@ import {
 import { Image } from 'react-bootstrap'
 import { withRouter } from "react-router-dom";
 import {fetchMovie} from "../actions/movieActions";
+import {submitLogin} from "../actions/authActions";
 
 //support routing by creating a new component
 
 class Movie extends Component {
+    constructor(props) {
+        super(props);
+        this.updateDetails = this.updateDetails.bind(this);
+        this.submitReview = this.submitReview.bind(this);
+
+        this.state = {
+            details:{
+                title: '',
+                rating: '',
+                review: ''
+            }
+        };
+    }
+
+    submitReview() {
+        const {dispatch} = this.props;
+        dispatch(addReview(this.state.details));
+    }
 
     componentDidMount() {
         const {dispatch} = this.props;
         if (this.props.selectedMovie == null)
             dispatch(fetchMovie(this.props.movieId));
     }
+
     updateDetails(event){
         let updateDetails = Object.assign({}, this.state.details);
 
@@ -32,6 +52,7 @@ class Movie extends Component {
             details: updateDetails
         });
     }
+
     render() {
         const ActorInfo = ({actors}) => {
             return actors.map((actor, i) =>
@@ -54,6 +75,7 @@ class Movie extends Component {
             if (!currentMovie) { // evaluates to true if currentMovie is null
                 return <div>Loading...</div>;
             }
+            this.state.details.title = currentMovie.title;
             return (
                 <Panel>
                     <Panel.Heading>Movie Detail</Panel.Heading>
@@ -80,7 +102,7 @@ class Movie extends Component {
                                     Review
                                 </Col>
                                 <Col sm={10}>
-                                    <FormControl onChange={this.updateDetails} value={this.state.details.password} type="text" placeholder="" />
+                                    <FormControl onChange={this.updateDetails} value={this.state.details.review} type="text" placeholder="" />
                                 </Col>
                             </FormGroup>
 
