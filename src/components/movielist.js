@@ -39,7 +39,7 @@ class MovieList extends Component {
             console.log(movieList);
             return (
                 <Carousel onSelect={this.handleSelect}>
-                    {Object.keys(movieList).map((movie) =>
+                    {Object.forEach(movieList).map((movie) =>
                     <Carousel.Item key={movie._id}>
                         <div>
                             <LinkContainer to={'/movie/'+movie._id} onClick={()=>this.handleClick(movie)}>
