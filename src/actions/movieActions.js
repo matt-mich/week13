@@ -85,9 +85,6 @@ export function fetchMovie(movieId){
                 'Content-Type': 'application/json',
                 'Authorization': localStorage.getItem('token')
             },
-            body:{
-                'reviews':true
-            },
             mode: 'cors'})
             .then( (response) => {
                 if (!response.ok) {
