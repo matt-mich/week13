@@ -21,15 +21,13 @@ import {addReview} from "../actions/movieActions";
 class Movie extends Component {
     constructor(props) {
         super(props);
-        this.updateDetails = this.updateDetails.bind(this);
-        this.submitReview = this.submitReview.bind(this);
+        this.getRating = this.getRating.bind(this);
+        this.getReview = this.getReview.bind(this);
 
         this.state = {
-            details:{
-                title: '',
-                rating: '',
-                review: ''
-            }
+            title: '',
+            rating: '',
+            review: ''
         };
     }
 
@@ -44,14 +42,13 @@ class Movie extends Component {
             dispatch(fetchMovie(this.props.movieId));
     }
 
-    updateDetails(event){
-        let updateDetails = Object.assign({}, this.state.details);
-
-        updateDetails[event.target.id] = event.target.value;
-        this.setState({
-            details: updateDetails
-        });
+    getRating(event){
+        this.setState({rating: event.target.value});
     }
+    getReview(event){
+        this.setState({review: event.target.value});
+    }
+
 
     render() {
         const ActorInfo = ({actors}) => {
@@ -93,7 +90,7 @@ class Movie extends Component {
                                     Rating
                                 </Col>
                                 <Col sm={10}>
-                                    <FormControl onChange={this.updateDetails} value={this.state.details.rating} type="number" placeholder="" />
+                                    <FormControl onChange={this.getReview} value={this.state.details.rating} type="number" placeholder="" />
                                 </Col>
                             </FormGroup>
 
@@ -102,13 +99,13 @@ class Movie extends Component {
                                     Review
                                 </Col>
                                 <Col sm={10}>
-                                    <FormControl onChange={this.updateDetails} value={this.state.details.review} type="text" placeholder="" />
+                                    <FormControl onChange={this.getRating} value={this.state.details.review} type="text" placeholder="" />
                                 </Col>
                             </FormGroup>
 
                             <FormGroup>
                                 <Col smOffset={2} sm={10}>
-                                    <Button onClick={this.login}>Submit Review</Button>
+                                    <Button onClick={this.submitReview}>Submit Review</Button>
                                 </Col>
                             </FormGroup>
                         </Form>
