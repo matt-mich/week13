@@ -91,7 +91,7 @@ class Movie extends Component {
                     <Panel.Body><ReviewInfo reviews={currentMovie.reviews} /></Panel.Body>
                     <Panel.Body>
                         <Form horizontal>
-                            <FormGroup controlId="username">
+                            <FormGroup controlId="rating">
                                 <Col componentClass={ControlLabel} sm={2}>
                                     Rating
                                 </Col>
@@ -100,7 +100,7 @@ class Movie extends Component {
                                 </Col>
                             </FormGroup>
 
-                            <FormGroup controlId="password">
+                            <FormGroup controlId="review">
                                 <Col componentClass={ControlLabel} sm={2}>
                                     Review
                                 </Col>
