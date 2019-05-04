@@ -1,5 +1,5 @@
 {
-  "name": "Michaelis_Assignment_5",
+  "name": "hw5",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,7 @@
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
-   },
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -28,5 +28,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "proxy": "https://michaelis-assignment-4.herokuapp.com"
+  "proxy": "https://michaelis-assignment-4.herokuapp.com/"
 }
