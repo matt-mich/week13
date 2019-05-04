@@ -48,7 +48,9 @@ class Movie extends Component {
     getReview(event){
         this.setState({review: event.target.value});
     }
-
+    shouldComponentUpdate(nextProps, nextState) {
+        return false;
+    }
 
     render() {
         const ActorInfo = ({actors}) => {
@@ -90,7 +92,7 @@ class Movie extends Component {
                                     Rating
                                 </Col>
                                 <Col sm={10}>
-                                    <FormControl onfocusout={this.getRating} value={this.state.rating} type="number" placeholder="" />
+                                    <FormControl onFocusOut={this.getRating} value={this.state.rating} type="number" placeholder="" />
                                 </Col>
                             </FormGroup>
 
@@ -99,13 +101,13 @@ class Movie extends Component {
                                     Review
                                 </Col>
                                 <Col sm={10}>
-                                    <FormControl onfocusout={this.getReview} value={this.state.review} type="text" placeholder="" />
+                                    <FormControl onChange={this.getReview} value={this.state.review} type="text" placeholder="" />
                                 </Col>
                             </FormGroup>
 
                             <FormGroup>
                                 <Col smOffset={2} sm={10}>
-                                    <Button onClick={this.submitReview}>Submit Review</Button>
+                                    <Button onChange={this.submitReview}>Submit Review</Button>
                                 </Col>
                             </FormGroup>
                         </Form>
