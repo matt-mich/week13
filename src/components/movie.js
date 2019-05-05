@@ -33,9 +33,6 @@ class Movie extends Component {
     }
 
     submitReview() {
-
-        this.state.details.title = this.props.selectedMovie.title;
-
         const {dispatch} = this.props;
         dispatch(addReview(this.state));
     }
@@ -48,6 +45,8 @@ class Movie extends Component {
     }
 
     updateDetails(event){
+        this.state.details.title = this.props.selectedMovie.title;
+
         let updateDetails = Object.assign({}, this.state.details);
 
         updateDetails[event.target.id] = event.target.value;
