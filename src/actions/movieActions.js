@@ -68,6 +68,7 @@ export function addReview(data){
                 if (!response.ok) {
                     throw Error(response.statusText);
                 }
+                window.location.reload();
                 return response.json();
             })
             .catch( (e) => console.log(e) );
