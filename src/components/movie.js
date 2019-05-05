@@ -21,6 +21,9 @@ class Movie extends Component {
     constructor(props) {
         super(props);
         this.updateDetails = this.updateDetails.bind(this);
+        this.updateReview = this.updateReview.bind(this);
+        this.updateRating = this.updateRating.bind(this);
+
         this.submitReview = this.submitReview.bind(this);
         this.state = {
             details:{
@@ -32,6 +35,10 @@ class Movie extends Component {
     }
 
     submitReview() {
+        this.state.details.title = this.props.selectedMovie.title;
+        this.state.details.rating = this.u_rating;
+        this.state.details.review = this.u_review;
+
         const {dispatch} = this.props;
         dispatch(addReview(this.state.details));
     }
@@ -43,9 +50,15 @@ class Movie extends Component {
             dispatch(fetchMovie(this.props.movieId));
     }
 
-    updateDetails(event){
-        this.state.details.title = this.props.selectedMovie.title;
+    updateReview(event){
+        this.u_review = event.target.value;
+    }
 
+    updateRating(event){
+        this.u_rating = event.target.value;
+    }
+
+    updateDetails(event){
         let updateDetails = Object.assign({}, this.state.details);
 
         updateDetails[event.target.id] = event.target.value;
@@ -94,7 +107,7 @@ class Movie extends Component {
                                     Rating
                                 </Col>
                                 <Col sm={10}>
-                                    <FormControl onChange={this.updateDetails} value={this.state.details.rating} type="number" placeholder="" />
+                                    <FormControl onChange={this.updateRating} value={this.u_rating} type="number" placeholder="" />
                                 </Col>
                             </FormGroup>
 
@@ -103,7 +116,7 @@ class Movie extends Component {
                                     Review
                                 </Col>
                                 <Col sm={10}>
-                                    <FormControl onChange={this.updateDetails} value={this.state.details.review} type="text" placeholder="" />
+                                    <FormControl onChange={this.updateReview} value={this.u_review} type="text" placeholder="" />
                                 </Col>
                             </FormGroup>
 
