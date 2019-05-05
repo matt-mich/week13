@@ -22,7 +22,7 @@ class Movie extends Component {
     constructor(props) {
         super(props);
         this.updateDetails = this.updateDetails.bind(this);
-
+        this.submitReview = this.submitReview.bind(this);
         this.state = {
             details:{
                 title: '',
