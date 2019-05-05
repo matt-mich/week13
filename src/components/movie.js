@@ -33,7 +33,7 @@ class Movie extends Component {
 
     submitReview() {
         const {dispatch} = this.props;
-        dispatch(addReview(this.state));
+        dispatch(addReview(this.state.details));
     }
 
     componentDidMount() {
