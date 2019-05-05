@@ -111,7 +111,7 @@ class Movie extends Component {
 
                             <FormGroup>
                                 <Col smOffset={2} sm={10}>
-                                    <Button onChange={this.submitReview}>Submit Review</Button>
+                                    <Button onClick={this.submitReview}>Submit Review</Button>
                                 </Col>
                             </FormGroup>
                         </Form>
