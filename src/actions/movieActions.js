@@ -55,7 +55,7 @@ export function fetchMovies(){
 export function addReview(data){
     const env = runtimeEnv();
     return dispatch => {
-        return fetch(`${env.REACT_APP_API_URL}/reviews`, {
+        return fetch(`${env.REACT_APP_API_URL}/review`, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

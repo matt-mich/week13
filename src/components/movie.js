@@ -13,8 +13,7 @@ import {
 } from 'react-bootstrap'
 import { Image } from 'react-bootstrap'
 import { withRouter } from "react-router-dom";
-import {fetchMovie} from "../actions/movieActions";
-import {addReview} from "../actions/movieActions";
+import {fetchMovie, addReview} from "../actions/movieActions";
 
 //support routing by creating a new component
 
